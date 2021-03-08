@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	                    https://www.springframework.org/schema/beans/spring-beans.xsd 
+	                    http://www.springframework.org/schema/context 
+	                    http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />	                    
+
+	<bean id="employee" class="com.abc.springcore.bean.Employee">
+		<property name="employeeId" value="342"></property>
+		<property name="employeeName" value="Harriet"></property>
+		<property name="salary" value="80000"></property>
+		<property name="bussinessUnit" value="Sales"></property>
+		<property name="age" value="27"></property>
+	</bean>
+	
+	<bean id="employee1" class="com.abc.springcore.main.Employee1">
+		<property name="employeeId" value="378"></property>
+		<property name="employeeName" value="Alex"></property>
+		<property name="salary" value="85000"></property>
+		<property name="bussinessUnit" value="Marketing"></property>
+	</bean>
+	
+	<bean id="sbu" class="com.abc.springcore.bean.Sbu">
+		<property name="sbuId" value="667"></property>
+		<property name="sbuName" value="Product Management"></property>
+		<property name="sbuHead" value="Faye"></property>
+	</bean>
+
+</beans>
